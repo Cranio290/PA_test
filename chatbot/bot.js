@@ -18,6 +18,7 @@ function bot() {
 var i = 0;
 
 function startbot() {
+  bot();
   bot = setInterval(bot, 3000);
 }
 
@@ -25,15 +26,20 @@ function stopbot() {
   clearInterval(bot);
 }
 
+function spam(msg) {
+if (!chatbox.value) {
+   if (antimute == "true") {
+     sendmsg(msg + ", +Anti-mute:" + Math.round(Math.random() * 1000) + "+");
+   } else {
+    sendmsg(msg);
+   }
+ }
+}
+
 function startspam(ms, msg, antimute) {
+  spam();
   spam = setInterval(function () {
-    if (!chatbox.value) {
-      if (antimute == "true") {
-        sendmsg(msg + ", +Anti-mute:" + Math.round(Math.random() * 1000) + "+");
-      } else {
-        sendmsg(msg);
-      }
-    }
+    spam();
   }, ms);
 }
 
