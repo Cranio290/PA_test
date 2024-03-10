@@ -23,9 +23,13 @@ function stopbot() {
   clearInterval(bot);
 }
 
-function startspam(ms, msg, ) {
+function startspam(ms, msg, antimute) {
   spam = setInterval(function () {
-    sendmsg(msg);
+    if (antimute == "true") {
+      sendmsg(msg + ", Anti-mute:" + Math.random() * 10);
+    } else {
+      sendmsg(msg);
+    }
   }, ms);
 }
 
