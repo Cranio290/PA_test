@@ -26,7 +26,7 @@ function stopbot() {
   clearInterval(bot);
 }
 
-function spam(msg) {
+function spam(msg, antimute) {
 if (!chatbox.value) {
    if (antimute == "true") {
      sendmsg(msg + ", +Anti-mute:" + Math.round(Math.random() * 1000) + "+");
@@ -37,9 +37,9 @@ if (!chatbox.value) {
 }
 
 function startspam(ms, msg, antimute) {
-  spam();
+  spam(msg, antimute);
   spam = setInterval(function () {
-    spam();
+    spam(msg, antimute);
   }, ms);
 }
 
