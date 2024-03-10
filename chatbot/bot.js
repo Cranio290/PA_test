@@ -29,7 +29,7 @@ function startspam(ms, msg, antimute) {
   spam = setInterval(function () {
     if (!chatbox.value) {
       if (antimute == "true") {
-        sendmsg(msg + ", +Anti-mute:" + Math.round(Math.random() * 1000 + "+"));
+        sendmsg(msg + ", +Anti-mute:" + Math.round(Math.random() * 1000)) + "+";
       } else {
         sendmsg(msg);
       }
