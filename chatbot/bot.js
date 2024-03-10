@@ -10,7 +10,9 @@ function sendmsg(txt) {
 
 function bot() {
   i++;
-  sendmsg("_Bot message:_ Did u know the cosine of " + i + " is " + "*" + Math.cos(i) + "*?");
+  if (chatbox.value == "") {
+    sendmsg("_Bot message:_ Did u know the cosine of " + i + " is " + "*" + Math.cos(i) + "*?");
+  }
 }
 
 var i = 0;
@@ -25,10 +27,12 @@ function stopbot() {
 
 function startspam(ms, msg, antimute) {
   spam = setInterval(function () {
-    if (antimute == "true") {
-      sendmsg(msg + ", Anti-mute:" + Math.random() * 10);
-    } else {
-      sendmsg(msg);
+    if (chatbox.value == "") {
+      if (antimute == "true") {
+        sendmsg(msg + ", Anti-mute:" + Math.random() * 10);
+      } else {
+        sendmsg(msg);
+      }
     }
   }, ms);
 }
