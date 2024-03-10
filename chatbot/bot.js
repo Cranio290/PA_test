@@ -10,7 +10,7 @@ function sendmsg(txt) {
 
 function bot() {
   i++;
-  if (chatbox.value == "") {
+  if (!chatbox.value) { //check if empty
     sendmsg("_Bot message:_ Did u know the cosine of " + i + " is " + "*" + Math.cos(i) + "*?");
   }
 }
@@ -27,7 +27,7 @@ function stopbot() {
 
 function startspam(ms, msg, antimute) {
   spam = setInterval(function () {
-    if (chatbox.value == "") {
+    if (!chatbox.value) {
       if (antimute == "true") {
         sendmsg(msg + ", Anti-mute:" + Math.random() * 10);
       } else {
