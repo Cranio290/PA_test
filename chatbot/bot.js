@@ -1,5 +1,6 @@
 var chatbox = document.getElementsByTagName('input')[0];
 var sendbtn =  document.getElementById("sendbtn");
+var bot;
 
 function sendmsg(txt) {
   chatbox.value = txt;
@@ -14,7 +15,7 @@ function bot() {
 var i = 0;
 
 function startbot() {
-  var bot = setInterval(bot, 3000);
+  bot = setInterval(bot, 3000);
 }
 
 function stopbot() {
