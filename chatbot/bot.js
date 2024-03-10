@@ -6,13 +6,15 @@ function sendmsg(txt) {
   sendbtn.click();
 }
 
+function bot() {
+  i++;
+  sendmsg("*Bot message:* Did u know the cosine of " + i + " is " + "*" + Math.cos(i) + "*?");
+}
+
 var i = 0;
 
 function startbot() {
-setInterval( function bot() {
-  i++;
-  sendmsg("*Bot message:* Did u know the cosine of " + i + " is " + "*" + Math.cos(i) + "*?");
-}, 3000);
+  setInterval(bot, 3000);
 }
 
 function stopbot() {
