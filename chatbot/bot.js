@@ -23,7 +23,7 @@ function stopbot() {
   clearInterval(bot);
 }
 
-function startspam(ms, msg) {
+function startspam(ms, msg, ) {
   spam = setInterval(function () {
     sendmsg(msg);
   }, ms);
