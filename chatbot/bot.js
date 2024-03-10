@@ -18,5 +18,5 @@ function startbot() {
 }
 
 function stopbot() {
-  setTimeout(bot);
+  clearInterval(bot);
 }
