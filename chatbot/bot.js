@@ -14,7 +14,7 @@ function bot() {
 var i = 0;
 
 function startbot() {
-  setInterval(bot, 3000);
+  var bot = setInterval(bot, 3000);
 }
 
 function stopbot() {
