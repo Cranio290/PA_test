@@ -11,7 +11,7 @@ var i = 0;
 function startbot() {
 setInterval( function bot() {
   i++;
-  sendmsg("**Bot message:** Did u know the cosine of " + i + " is " + "**" + Math.cos(i) + "**");
+  sendmsg("*Bot message:* Did u know the cosine of " + i + " is " + "*" + Math.cos(i) + "*?");
 }, 3000);
 }
 
