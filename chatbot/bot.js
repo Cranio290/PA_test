@@ -18,6 +18,7 @@ function bot() {
 var i = 0;
 
 function startbot() {
+  console.log("Bot started");
   bot();
   bot = setInterval(bot, 3000);
 }
@@ -37,6 +38,7 @@ if (!chatbox.value) {
 }
 
 function startspam(ms, msg, antimute) {
+  console.log("Bot spam started");
   spamsend(msg, antimute);
   spam = setInterval(function () {
     spamsend(msg, antimute);
