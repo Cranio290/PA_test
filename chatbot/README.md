@@ -10,7 +10,8 @@ The chatbot is still in development... the instructions will change later.
 - **sendmsg("your message")**: Sends a singoular message.
 - **startbot()**: Starts bot from the function included in script (can be changed as you want)
 - **stopbot()**: Stops ditto.
-- **startspam(milliseconds, "your message", antimute?)**: Type ms as number (reccomended: 1500-2000ms or more to not get muted), and for antimute type "true" or "false" (adds Antimute at end with random number to avoid mute).
+- **startspam(milliseconds, "your message", antimute?)**: Type ms as number (reccomended: 3000-5000ms or more to not get muted), and for antimute type "true" or "false" (adds Antimute at end with random number to avoid mute). **Ex.** startspam(5000, "Whatsup", "true");
+  
 - **stopspam()**: Stops ditto.
 
 # Functions:
