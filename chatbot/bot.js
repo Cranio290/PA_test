@@ -24,6 +24,7 @@ function startbot() {
 }
 
 function stopbot() {
+    console.log("Bot stopped");
   clearInterval(bot);
 }
 
@@ -46,5 +47,6 @@ function startspam(ms, msg, antimute) {
 }
 
 function stopspam() {
+      console.log("Bot spam stopped");
   clearInterval(spam);
 }
