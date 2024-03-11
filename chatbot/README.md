@@ -3,7 +3,7 @@ The chatbot is still in development... the instructions will change later.
 # Basic instructions:
 1. Go to https://pixmap.fun/chat .
 2. Open console by inspecting element, right-click anywhere and inspect element or use a shortcut command.
-3. Copy bot.js and paste and run on console (the script can be changed how you want if needed).
+3. Copy (bot.js)[https://github.com/Cranio290/PM_test/edit/main/chatbot/bot.js] and paste and run on console (the script can be changed how you want if needed).
 4. Run any command on console.
 
 # Console commands:
