@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Timelapse</title>
+			<link rel="stylesheet" href="style.css">
+    </head>
+    <body style="height:auto">
+	<h1>Timelapse</h1>
+	<div>
+	<canvas id="cvs"></canvas>
+	</div>
+	<p>welcome</p>
+	
+	<h2>Control Pannel:</h2>
+	<p>Position (x, y):</p><input id="xpos" type="text" placeholder="x pos" value="130"></input>
+	<input id="ypos" type="text" placeholder="y pos" value="88"></input>
+
+	<p>Date (year, month, day):</p><input id="year" type="text" value="2022"></input>
+	<input id="month" type="text" value="7"></input>
+	<input id="day" type="text" value="3"></input>
+	
+	<p>Chunk (size, repeat x and y):</p><input id="size" type="text" placeholder="size" value="256"></input>
+	<input id="repx" type="text" placeholder="repeat chunk x" value="17"></input>
+	<input id="repy" type="text" placeholder="repeat chunk y" value="10"></input>
+	
+	<button onclick="render()">Render</button>
+    <button onclick="downloadcvs()">Download</button>
+	
+	<script src="control.js"></script>
+	<script src="render.js"></script>
+    </body>
+</html>
