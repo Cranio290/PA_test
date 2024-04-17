@@ -6,4 +6,5 @@ margin: 0;
 #cvs {
 	border: solid 1px black;
 	image-rendering: pixelated;
+	background-color: rgb(202, 227, 255);
 }
