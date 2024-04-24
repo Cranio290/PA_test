@@ -8,7 +8,7 @@ cvs.height = 720;
 //71, 40 and 426, 240
 function renderchunk(yy,m,d,c,t,x,y, cx,cy,cs) {
 	var img = new Image();
-    img.src = "https://backup.pixarea.fun/" + yy + "/" + m + "/" + d + "/" + c + "/" + t + "/" + x + "/" + y + ".png";
+    img.src = "https://storage.pixelplanet.fun/" + yy + "/" + m + "/" + d + "/" + c + "/" + t + "/" + x + "/" + y + ".png";
         img.onload = function () {
             ctx.drawImage(img, cx, cy, cs, cs);
             console.log("rendered: " + img.src);
