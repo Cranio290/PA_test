@@ -14,7 +14,7 @@ function renderchunk(yy,m,d,c,t,x,y, cx,cy,cs) {
             console.log("rendered: " + img.src);
         };
 		img.onerror = function() {
-            console.log("error");
+            console.log("error: " + img.src);
         };
 }
 
