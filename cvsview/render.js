@@ -39,7 +39,7 @@ for (let j = 0; j < repy; j++) {
 	    } else {
 		    var setday = day;
 		}
-        renderchunk(year, setmonth, setday, 0, "tiles", ix+i, iy, chs*i, chs*j, chs);
+        renderchunk(year, setmonth, setday, 11, "tiles", ix+i, iy, chs*i, chs*j, chs);
     }
 iy++;
 }
